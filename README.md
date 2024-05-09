@@ -243,12 +243,40 @@ $$
 6.
 
 $$
-{\displaystyle {\begin{bmatrix}d_{0}\\d_{1}\\d_{2}\\d_{3}\end{bmatrix}}={\begin{bmatrix}2&3&1&1\\1&2&3&1\\1&1&2&3\\3&1&1&2\end{bmatrix}}{\begin{bmatrix}b_{0}\\b_{1}\\b_{2}\\b_{3}\end{bmatrix}}}
+{\displaystyle {\begin{bmatrix}d_{0}\\d_{1}\\d_{2}\\d_{3}\end{bmatrix}}={\begin{bmatrix}2&3&1&1\\1&2&3&1\\1&1&2&3\\3&1&1&2\end{bmatrix}}{\begin{bmatrix}0A\\05\\01\\03\end{bmatrix}}}
 $$
 
 $$
-d_0 = 2
+d_0 = (2 \cdot A) + (3 \cdot 5) + (1 \cdot 1) + (1 \cdot 3) \\
+= (x \cdot (x^3 + x)) + ((x+1)\cdot(x^2 + 1)) + (1) +(1\cdot (x+1)) \\
+= (x^4 + x^2) + (x^3+x^2+x+1) + 1+x + 1 \\
+d_0 = x^4 + x^3 + 1 = 25
 $$
+
+$$
+d_1 = (1\cdot A) + (2 \cdot 5) + (3 \cdot 1) + (1 \cdot 3) = (1\cdot A) + (2 \cdot 5) \\
+= (1\cdot (x^3 + x)) + (x\cdot (x^2+1))
+= x^3 + x+x^3 +x \\
+d_1 = 0
+$$
+
+$$
+d_2 = A + 5 + 2 + (3\cdot 3)\\
+= x^3 + x+x^2+1+x+x^2+1 \\
+d_2 = x^3 = 8
+$$
+
+$$
+d_3 = (3 \cdot A) + 5 + 1 + (2 \cdot 3) \\
+= ((x+1)\cdot (x^3 + x)) + x^2+1 + 1 + (x\cdot(x+1)) \\
+= (x^4 + x^3 + x^2 + x) + x^2 + x^2 + x \\
+d_3 = x^4 + x^3 + x^2 = 28
+$$
+
+$$
+\begin{bmatrix}d_{0} = 25\\d_{1}=0\\d_{2}=8\\d_{3}=28\end{bmatrix}
+$$
+
 
 7.
 
